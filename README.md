@@ -1,4 +1,4 @@
-# Deloitte Australia – Data Analytics Job Simulation (Forage)
+# Deloitte – Data Analytics Job Simulation (Forage)
 
 **Author:** Fariba Kazi
 
