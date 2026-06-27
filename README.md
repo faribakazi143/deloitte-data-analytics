@@ -1,30 +1,31 @@
-# Deloitte – Data Analytics Job Simulation (Forage)
+# Deloitte Australia – Data Analytics & Forensic Technology (Forage)
 
-**Author:** Fariba Kazi
+**Author:** Fariba Kazi · **Tools: Tableau · Excel**
 
-Completed the Deloitte Australia Data Analytics & Forensic Technology virtual job
-simulation on Forage, acting as a data analyst for the fictional client **Daikibo
-Industrials**.
+Completed the Deloitte Australia Data Analytics virtual job simulation on Forage,
+acting as a data analyst for the fictional client **Daikibo Industrials**. The work
+covers two deliverables: an interactive machine-downtime dashboard and a forensic
+pay-equality classification.
 
 ---
 
 ## Task 1 — Machine Downtime Dashboard (Tableau)
 **Problem:** Daikibo unified one month of IoT telemetry from 4 global factories and
-needed to know where machines were failing most.
+needed to know where machines were failing most, and why.
+
+**Approach:** Built an `Unhealthy` measure (10 minutes of downtime per "unhealthy"
+status message), created two bar charts (downtime per factory, downtime per device
+type), and linked them into a dashboard where selecting a factory filters the device
+breakdown.
+
+**Result:** **Factory Seiko (Osaka)** accounted for the most downtime (480 min) —
+and it traced entirely to a single **Laser Welder**, indicating one prolonged outage
+rather than scattered failures across machines.
+
+**Recommended action:** prioritise maintenance and root-cause investigation on the
+Seiko Laser Welder, where one machine drove 100% of that factory's downtime.
 
 ![Daikibo downtime dashboard](daikibo-downtime-dashboard.png)
-
-**Approach:** Built an `Unhealthy` measure (10 min of downtime per "unhealthy"
-status message), created two bar charts (downtime per factory, downtime per device
-type), and combined them into a dashboard where selecting a factory filters the
-device chart.
-
-**Result:** **Factory Seiko (Osaka)** had the most downtime (480 min), entirely from
-the **Laser Welder** — pointing to a single prolonged outage rather than scattered
-failures.
-
-**Recommended action:** prioritise maintenance on the Laser Welder at Seiko, where a
-single machine drove the entire downtime figure.
 
 ---
 
@@ -50,9 +51,15 @@ Implemented as a formula so it recalculates automatically:
 | Daikibo Berlin | Operational Support | 0 | Fair |
 | Daikibo Shenzhen | Sr. Manager | −21 | Highly Discriminative |
 
-**File:** `daikibo-equality-table-completed.xlsx`
+**Recommended action:** review pay bands in the roles flagged Highly Discriminative
+(e.g. Meiyo C-Level and senior roles) as the priority cases for the equality audit.
 
 ---
 
+## Explore
+- **Dashboard:** `daikibo-downtime-dashboard.png`
+- **Completed analysis:** `daikibo-equality-table-completed.xlsx`
+
 ## Skills
-Data visualisation · Dashboard design · Tableau · Excel logic · Trend analysis
+Tableau · Dashboard design · Interactive filtering · Excel logic · Forensic data
+classification · Data storytelling
