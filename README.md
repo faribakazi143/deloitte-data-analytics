@@ -12,6 +12,8 @@ Industrials**.
 **Problem:** Daikibo unified one month of IoT telemetry from 4 global factories and
 needed to know where machines were failing most.
 
+![Daikibo downtime dashboard](daikibo-downtime-dashboard.png)
+
 **Approach:** Built an `Unhealthy` measure (10 min of downtime per "unhealthy"
 status message), created two bar charts (downtime per factory, downtime per device
 type), and combined them into a dashboard where selecting a factory filters the
@@ -21,7 +23,8 @@ device chart.
 the **Laser Welder** — pointing to a single prolonged outage rather than scattered
 failures.
 
-![Downtime Dashboard](daikibo-downtime-dashboard.png)
+**Recommended action:** prioritise maintenance on the Laser Welder at Seiko, where a
+single machine drove the entire downtime figure.
 
 ---
 
@@ -36,6 +39,16 @@ equality score (−100 to +100, 0 = ideal) per job role and factory.
 
 Implemented as a formula so it recalculates automatically:
 `=IF(ABS(C2)<=10,"Fair",IF(ABS(C2)<=20,"Unfair","Highly Discriminative"))`
+
+**Sample output:**
+
+| Factory | Job Role | Equality Score | Equality class |
+|---|---|---|---|
+| Daikibo Factory Meiyo | C-Level | −25 | Highly Discriminative |
+| Daikibo Factory Meiyo | Sr. Manager | −15 | Unfair |
+| Daikibo Factory Meiyo | Sr. Engineer | −5 | Fair |
+| Daikibo Berlin | Operational Support | 0 | Fair |
+| Daikibo Shenzhen | Sr. Manager | −21 | Highly Discriminative |
 
 **File:** `daikibo-equality-table-completed.xlsx`
 
