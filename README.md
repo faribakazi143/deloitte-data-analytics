@@ -27,6 +27,8 @@ Seiko Laser Welder, where one machine drove 100% of that factory's downtime.
 
 ![Daikibo downtime dashboard](daikibo-downtime-dashboard.png)
 
+🔗 **[Open the interactive version on Tableau Public](https://public.tableau.com/app/profile/fariba.kazi/viz/DaikiboMachineDowntimeDashboard_17826783881480/DaikiboMachineDowntimeDashboard)**
+
 ---
 
 ## Task 2 — Gender Pay-Equality Classification (Excel)
@@ -57,7 +59,8 @@ Implemented as a formula so it recalculates automatically:
 ---
 
 ## Explore
-- **Dashboard:** `daikibo-downtime-dashboard.png`
+- 🔗 **[View the interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/fariba.kazi/viz/DaikiboMachineDowntimeDashboard_17826783881480/DaikiboMachineDowntimeDashboard)** — live, clickable version
+- **Dashboard screenshot:** `daikibo-downtime-dashboard.png`
 - **Completed analysis:** `daikibo-equality-table-completed.xlsx`
 
 ## Skills
